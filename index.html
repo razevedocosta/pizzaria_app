@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Paladare Pizzaria</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<div class="topo-fixo z-depth-1">
+		<div class="valign-wrapper red darken-4 white-text">
+
+		    <h5 class="titulo">Pizzaria</h5>
+
+		    <div>			    
+				<i data-activates="submenu" data-gutter="5" data-contrainwidth="false"
+				class="material-icons waves-effect waves-light waves-circle dropdown-button">more_vert</i>
+			</div>
+			<ul class="dropdown-content" id="submenu">
+				<li> <a class="black-text acao-limpar">Limpar</a></li>
+			</ul>
+        </div>
+        
+		<ul class="tabs red darken-1">
+		    <li class="tab">
+		        <a href="#pizzas"
+		           class="white-text waves-effect waves-light">
+		            Pizzas
+		        </a>
+		    </li>
+		    <li class="tab">
+		        <a href="#bebidas"
+		           class="white-text waves-effect waves-light">
+		            Bebidas
+		        </a>
+            </li>
+		</ul>
+    </div>
+    
+	<div id="pizzas" class="section">
+	    <h6 class="container brown-text"><strong>Tradicionais
+            <span id="preco-tradicional" style="float:right;">R$ 36,00</span></strong>
+        </h6>
+	    <div class="collection">
+            <a class="collection-item  waves-effect black-text">Calabresa</a>
+            <a class="collection-item  waves-effect black-text">Frango com catupiry</a>
+	        <a class="collection-item  waves-effect black-text">Mexicana</a>
+	        <a class="collection-item  waves-effect black-text">Mussarela</a>
+	        <a class="collection-item  waves-effect black-text">Portuguesa</a>	        
+	    </div>
+
+	    <h6 class="container brown-text"><strong>Especiais
+            <span id="preco-especial" style="float:right;">R$ 44,00</span></strong>
+        </h6>
+	    <div class="collection">
+	        <a class="collection-item  waves-effect black-text">A moda da casa</a>
+            <a class="collection-item  waves-effect black-text">Bacon</a>
+            <a class="collection-item  waves-effect black-text">Estrogonofe</a>
+	        <a class="collection-item  waves-effect black-text">Filé mignon</a>
+	        <a class="collection-item  waves-effect black-text">Frango e palmito</a>
+        </div>
+        
+        <h6 class="container brown-text"><strong>Doces
+            <span id="preco-doces" style="float:right;">R$ 40,00</span></strong>
+        </h6>
+	    <div class="collection">
+            <a class="collection-item  waves-effect black-text">Abacaxi e leite condensado</a>
+            <a class="collection-item  waves-effect black-text">Banana e canela</a>
+            <a class="collection-item  waves-effect black-text">Brigadeiro</a>
+	        <a class="collection-item  waves-effect black-text">Chocolate branco</a>  
+	        <a class="collection-item  waves-effect black-text">Romeu e julieta</a>
+	    </div>
+	</div>
+
+	<div id="bebidas" class="section">
+	    <h6 class="container  brown-text"><strong>Refrigerantes (2L)</strong></h6>
+	    <div class="collection">
+            <a class="collection-item  waves-effect black-text">Baré</a>
+            <a class="collection-item  waves-effect black-text">Fanta Laranja</a>
+	        <a class="collection-item  waves-effect black-text">Guaraná Antartica</a>
+            <a class="collection-item  waves-effect black-text">Coca Cola</a>
+            <a class="collection-item  waves-effect black-text">Soda Limonada</a>
+	    </div>
+
+	    <h6 class="container  brown-text"><strong>Sucos (1L)</strong></h6>
+	    <div class="collection">
+            <a class="collection-item  waves-effect black-text">Abacaxi</a>
+            <a class="collection-item  waves-effect black-text">Maracujá</a>
+            <a class="collection-item  waves-effect black-text">Morango</a>
+            <a class="collection-item  waves-effect black-text">Laranja</a>
+            <a class="collection-item  waves-effect black-text">Uva</a>
+		</div>
+		<blockquote id="total" style="display: none;">0</blockquote>
+    </div>
+
+	<div class="fixed-action-btn">
+	  <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect waves-light modal-trigger">
+		<i class="material-icons">done</i>
+	  </a>
+	</div>
+
+	<div class="modal modal-fixed-footer" id="confirmacao">
+	    <div class="modal-content">
+	        <h5>Resumo do pedido</h5>
+	        <input type="number" class="validate" placeholder="Número da mesa" id="numero-mesa">
+			<blockquote id="resumo"></blockquote>
+			
+			<div class="container">
+				<div class="row">
+					<div class="col s12" style="text-align: center;">
+						<strong>Total: R$ <span id="total-pedido"></span></strong>
+					</div>
+				</div>
+			</div>
+        </div>
+    
+	    <div class="modal-footer">
+		    <div class="modal-fixed-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col s5">
+							<button class="btn waves-effect waves-light modal-close acao-finalizar">
+								Pedir
+							</button>
+						</div>
+						<div class="col s6">
+							<button class="btn-flat grey lighten-2 waves-effect waves-red modal-close">
+								Cancelar
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+	<script src="js/app.js"></script>
+	
+</body>
+</html>
