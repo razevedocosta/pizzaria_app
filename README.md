@@ -8,4 +8,4 @@ Funcionalidades:
 - cálculo do valor total do pedido
 - inserção da mesa do cliente
 
-![](https://github.com/razevedocosta/pizzaria_app/pizzaria-app.png)
+https://github.com/razevedocosta/pizzaria_app/blob/master/pizzaria-app.png
