@@ -4,7 +4,7 @@ Aplicativo desenvolvido utilizando HTML, CSS (framework Materialize) e JAVASCRIP
 
 ![](https://github.com/razevedocosta/pizzaria_app/blob/master/pizzaria-app.png)
 
-Funcionalidades:
+**Funcionalidades:**
 - listagem dos itens (pizzas e bebidas)
 - seleção de itens
 - cálculo do valor total do pedido
