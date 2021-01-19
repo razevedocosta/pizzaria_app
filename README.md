@@ -2,7 +2,7 @@
 
 Aplicativo desenvolvido utilizando HTML, CSS (framework Materialize) e JAVASCRIPT para a realização de pedidos em um pizzaria.
 
-![](https://github.com/razevedocosta/eleicao/blob/master/pizzaria-app.png)
+![](https://github.com/razevedocosta/pizzaria-app/blob/master/pizzaria-app.png)
 
 Funcionalidades:
 - listagem dos itens (pizzas e bebidas)
